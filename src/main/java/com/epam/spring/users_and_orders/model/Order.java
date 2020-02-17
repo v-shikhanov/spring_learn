@@ -2,34 +2,36 @@ package com.epam.spring.users_and_orders.model;
 
 public class Order {
 
-    private final String id;
-    private final String name;
-    private final Integer cost;
+  private final String id;
+  private final String name;
+  private final Integer cost;
 
-    public Order(String id, String name, Integer cost) {
-        this.id = id;
-        this.name = name;
-        this.cost = cost;
-    }
+  public Order(String id, String name, Integer cost) {
 
-    public String getId() {
-        return id;
-    }
+    this.id = id;
+    this.name = name;
+    this.cost = cost;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public Integer getCost() {
-        return cost;
-    }
+  public String getName() {
+    return name;
+  }
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", cost=" + cost +
-                '}';
-    }
+  public Integer getCost() {
+    return cost;
+  }
+
+  @Override
+  public String toString() {
+
+    return "Order{" +
+        "id='" + id + '\'' +
+        ", name='" + name + '\'' +
+        ", cost=" + cost +
+        '}';
+  }
 }

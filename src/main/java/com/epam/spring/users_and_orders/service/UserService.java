@@ -9,13 +9,13 @@ import java.util.List;
 @Service
 public class UserService {
 
-    private final UserRepository userRepository;
+  private final UserRepository userRepository;
 
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+  public UserService(UserRepository userRepository) {
+    this.userRepository = userRepository;
+  }
 
-    public List<User> getAll() {
-        return userRepository.getUsers();
-    }
+  public List<User> getAll() {
+    return userRepository.getUsers();
+  }
 }

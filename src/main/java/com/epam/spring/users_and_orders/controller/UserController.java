@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/users")
 public class UserController {
 
   private final UserService userService;
@@ -16,7 +15,7 @@ public class UserController {
     this.userService = userService;
   }
 
-  @GetMapping("/model")
+  @GetMapping("/users")
   public String getAllUsers(final Model model) {
 
     model.addAttribute("users", userService.getAll());

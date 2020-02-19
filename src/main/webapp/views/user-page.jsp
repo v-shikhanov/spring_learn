@@ -30,7 +30,7 @@
             <tr>
                 <td><c:out value="${user.firstName}"/></td>
                 <td><c:out value="${user.lastName}"/></td>
-                <td><c:out value="${user.orders.size}"/></td>
+                <td>123</td>
                 <td><c:out value="${user.id}"/></td>
             </tr>
         </c:forEach>
